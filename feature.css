@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+:root {
+	--bg-color: black;
+	--second-bg-color: #323946;
+	--text-color: #fff;
+	--main-color: #0ef;
+	--number-of-cols: 4;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+	font-size: 1.6rem;
+	line-height: 1.5rem;
+	width:100%;
+	height: auto;
+}
+
+section {
+	min-height: 100vh;
+	padding: 10rem 9% 2rem;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 3.5rem 9%;
+	background: linear-gradient( rgba(1, 10, 10, 0.1), var(--main-color));
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.header.sticky {
+	border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+	font-size: 2.5rem;
+	color: var(--text-color);
+	font-weight: 600;
+	cursor: default;
+	color: var(--text-color);
+	transition: .5s ease;
+}
+
+.logo:hover {
+	color: var(--bg-color);
+}
+
+.navbar a {
+	font-size: 1.7rem;
+	color: var(--text-color);
+	margin-left: 4rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+	color: var(--main-color);
+}
+
+
+h1{
+	margin: auto;
+	background: var(--bg-color);
+	color: var(--main-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: 90px;
+	font-size: 6rem;
+	transition: .7s ease;
+	z-index: 1;
+	cursor: default;
+}
+h1:hover{
+	color: var(--text-color);
+}
+
+.banner{
+	width: 100%;
+	height: calc(100vh - 45px);
+	background: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container{
+	width: 50%:
+	height: 10%;
+	display: grid;
+	grid-template-columns: repeat (auto-fit, minmax(750px, auto));
+	gap: 10px;
+	padding: 10px;
+}
+
+.box{
+	height: 100px;
+	width: 3050px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient( rgba(1, 10, 10, 0.1), var(--main-color)); ;
+	font-size: 8rem;
+	position: relative;
+	right: 670px;
+	top: 100px;
+	cursor: default;
+	color: var(--text-color);
+	transition: .5s ease;
+}
+.box:hover{
+	color: var(--bg-color);
+}
+
+.box-1{
+	height: 340px;
+	width: 3000px;
+	display: inline-block;
+	background: transparent;	
+	position: relative;
+	left: -390px;
+	border: 1px solid #0ef;
+	top: 200px;
+}
+
+.box-1 .inside{
+	position: relative;
+	top: 30px;
+}
+
+.box-2{
+	height: 340px;
+	width: 3000px;
+	display: inline-block;
+	background: transparent;	
+	position: relative;
+	left: -390px;
+	border: 1px solid #0ef;
+}
+
+.box-2 .inside{
+	position: relative;
+	top: 30px;
+}
+
+
+
+
+
+/*2ND TYPE OF MULTIMEDIA PRESENTAION CSS*/
+
+.box-3{
+	height: 340px;
+	width: 3000px;
+	display: inline-block;
+	background: transparent;	
+	position: relative;
+	left: -390px;
+	border: 1px solid #0ef;
+	top: 330px;
+}
+
+.box-3 .inside{
+	position: relative;
+	top: 30px;
+}
+
+.box-4{
+	height: 340px;
+	width: 3000px;
+	display: inline-block;
+	background: transparent;	
+	position: relative;
+	left: -390px;
+	border: 1px solid #0ef;
+}
+
+.box-4 .inside{
+	position: relative;
+	top: 30px;
+	left: 0px;
+	display: inline-block;
+}
+
+
+
+/*TEXT CSS*/
+.text{
+	cursor: default;
+}
+.text h2{
+	position: relative;
+	top: -70px;
+}
+.text h1{
+	position: relative;
+	top: -120px
+}
+
+/*IMAGES CSS SECTION*/
+.images {
+	background: var(--bg-color);
+}
+
+.images img {
+	align-items: center;
+	justify-items: center;
+	position: relative;
+	right: 0px;
+	background-size: cover;
+}
+
+.images {
+	margin-bottom: 4rem;
+	position: relative;
+	top: 20px;
+	left: 0px;
+	display: flex;
+}
+
+.images-container {
+	display: inline-block;
+	align-items: center;
+	width: 120vh;
+	justify-content: center;
+	padding: 10px 10px;
+
+}
+
+.images-container .images-box {
+	position: relative;
+	border-radius: 2rem;
+	box-shadow: 0 0 1rem var(--bg-color);
+	overflow: hidden;
+	display: grid;
+	transition: .5 ease;
+}
+
+.images-container .images-box:hover {
+	box-shadow: 0 .5rem .5rem #00ddff;
+}
+
+.images-container .images-box-v {
+	position: relative;
+	border-radius: 2rem;
+	box-shadow: 0 0 1rem var(--bg-color);
+	overflow: hidden;
+	display: flex;
+}
+
+
+.images-container .images-box-v:hover {
+	box-shadow: 0 .5rem .5rem #00ddff;
+}
+
+.images-box img {
+	width: 100%;
+	transition: .5s ease;
+}
+.images-box-v img {
+	width: 100%;
+	transition: .5s ease;
+}
+
+.images-box:hover img {
+	transform: scale(1.1);
+}
+
+.images-box-v:hover img {
+	transform: scale(1.1);
+}
+
+.images-box .images-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient( rgba(0, 0, 0, 0.1), var(--main-color));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 4rem;
+	transform: translateY(100%);
+	transition: .5s ease;
+}
+
+.images-box-v .images-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient( rgba(0, 0, 0, 0.1), var(--main-color));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 4rem;
+	transform: translateY(100%);
+	transition: .5s ease;
+}
+
+.images-box:hover .images-layer {
+	transform: translateY(0);
+}
+
+.images-box-v:hover .images-layer {
+	transform: translateY(0);
+}
+
+.images-layer h4 {
+	font-size: 8rem;
+	position: relative;
+	top: -320px;
+}
+
+.images-layer p {
+	font-size: 4rem;
+	line-height: 5rem;
+	margin: .3rem 0 1rem;
+	color: var(--bg-color);
+}
+
+.images-layer a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	background: var(--text-color);
+	border-radius: 50%;
+	border: 1px solid var(--text-color);
+}
+.images-layer a i {
+	font-size: 2rem;
+	color: var(--bg-color);
+}
+
+
+/*FOOTER CSS SECTION*/
+.footer {
+	display: flex;
+	justify-items: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2rem 9%;
+	background: var(--second-bg-color);
+}
+
+.footer-text p {
+	font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: .8rem;
+	background: var(--main-color);
+	position: relative;
+	right: -790px;
+	border-radius: .8rem;
+	transition: .5s ease;
+    left: 1300px;
+}
+
+.footer-iconTop a:hover {
+	box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-iconTop a i {
+	font-size: 2.4rem;
+	color: var(--bg-color);
+}

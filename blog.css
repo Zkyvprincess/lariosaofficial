@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--bg-color: black;
+	--second-bg-color: #323946;
+	--text-color: #fff;
+	--main-color: #0ef;
+}
+
+html {
+	font-size: 62.5%;
+	overflow: ;
+}
+
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2rem 9%;
+	background: linear-gradient( rgba(1, 10, 10, 0.1), var(--main-color));
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.header.sticky {
+	border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+	font-size: 2.5rem;
+	color: var(--text-color);
+	font-weight: 600;
+	cursor: default;
+	transition: .5s ease;
+}
+.logo:hover {
+	color: var(--bg-color);
+	
+}
+
+.navbar a {
+	font-size: 1.7rem;
+	color: var(--text-color);
+	margin-left: 4rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+	color: var(--main-color);
+}
+
+span {
+	color: var(--main-color);
+}
+
+.multimedia {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--bg-color);
+}
+
+.multimedia-img img {
+	width: 35vw;
+	position:  relative;
+	left: -500px;
+	bottom: -200px;
+	transition: .5s ease;
+	box-shadow: none;
+}
+
+.multimedia-img:hover img {
+	transform: scale(1.1);
+	box-shadow: 0 0 1rem var(--main-color);
+}
+
+.heading {
+	text-align: center;
+	font-size: 2.5rem;
+	position: relative;
+	top: -200px;
+	left: 350px;
+}
+.multimedia-content h2 {
+    top: -250px;
+    left: 500px;
+	text-align: left;
+	line-height: 1.2;
+	color: var(--text-color);
+	transition: .5s ease;
+	cursor: default;
+}
+
+.multimedia-content h2:hover {
+	color: var(--main-color);
+}
+
+.multimedia-content p {
+	font-size: 1.6rem;
+	margin: 2rem 0 3rem;
+	position: relative;
+	top: -150px;
+	right: -300px;
+	cursor: default;
+}
+
+.btn {
+	display: inline-block;
+	padding: 1rem 2.8rem;
+	background: var(--main-color);
+	border-radius: 4rem;
+	box-shadow: 0 0 1rem var(--main-color);
+	font-size: 1.6rem;
+	color: var(--bg-color);
+	letter-spacing: .1rem;
+	font-weight: 600;
+	transition: .5s ease;
+	position: relative;
+	top: -150px;
+	right: -300px;
+}
+
+.btn:hover {
+	box-shadow: none;
+}
